@@ -118,15 +118,15 @@ li{
     margin: 1rem 2rem;
 }
 
-#n1-relatorio{ background-color: #8d94a8; }
+#n1-relatorio{ background-color: #a5859a; }
 
-#n2-relatorio{ background-color: #e7a07a; }
+#n2-relatorio{ background-color: #395085; }
 
-#n3-relatorio{ background-color: #9ebad8; }
+#n3-relatorio{ background-color: #e7a07a; }
 
-#n4-relatorio{ background-color: #ead39f; }
+#n4-relatorio{ background-color: #9ebad8; }
 
-#n5-relatorio{ background-color: #d29cb7; }
+#n5-relatorio{ background-color: #b7cc84; }
 
 #n6-relatorio{ background-color: #28a745; }
 
@@ -155,7 +155,7 @@ li{
 }
 
 .nome-relatorio {
-    top: 8px;
+    top: 1%;
     margin-left: 15%;
     width: 70%;
     height: 17vh;
@@ -167,7 +167,7 @@ li{
 }
 
 .titulo{
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 
 .conteudo-relatorio{
@@ -177,29 +177,7 @@ li{
     visibility: hidden;
     margin-top: 17vh;
     transition: all 0s;
-    z-index: 10000;
-}
-
-.menu-toggler:hover .conteudo-relatorio{
-    visibility: visible;
-    opacity: 1;
-    z-index: 1000;
-    height: max-content;
-    transition: all 1.2s;
-}
-
-#tema{
-    font-size: 1.6em;
-    margin-top: 5%;
-}
-
-#lista{
-    font-size: 1.5em;
-    margin-top: 10%;
-    width: 80%;
-    margin-left: 10%;
-    text-align: left;
-    line-height: 20px;
+    border-top: white solid 1px;
 }
 
 #rel3 { 
@@ -208,8 +186,24 @@ li{
 }
 
 #rel4 { 
-    width: 55%;
+    width: 50%;
     transform: translate(35%, 0);
+}
+
+.menu-toggler:hover .conteudo-relatorio{
+    visibility: visible;
+    opacity: 1;
+    height: max-content;
+    transition: all 1.2s;
+}
+
+#lista{
+    font-size: 1.8em;
+    margin-top: 10%;
+    width: 80%;
+    margin-left: 10%;
+    text-align: left;
+    line-height: 20px;
 }
 
 .line-top{
@@ -218,17 +212,16 @@ li{
     position: absolute;
     margin: auto;
     border: 5px solid #f2b918;
-    z-index: 100;
     background-color: #f2b918;
+    z-index: 999;
 }
 
 .menu-topo{
     pointer-events: none;
     position: absolute;
     margin: auto;
-    left: 35%;
-    width: 30%;
-    z-index: 1000;
+    left: 36%;
+    width: 28%;
 }
 
 .square-mask{
@@ -244,21 +237,22 @@ li{
 .banner{
     pointer-events: none;
     position: relative;
+    top: 20px;
 }
 
 #mensagem-presidente {
     position: relative;
-    top: 5em;
-    width: 100%;
+    width: 80%;
+    left: 10%;
     z-index: -1;
 }
 
 #botao-mensagem {
     pointer-events: painted;
     position: absolute;
-    top: 96%;
-    left: 89%;
-    width: 10%;
+    top: 87%;
+    left: 80.5%;
+    width: 9%;
     height: 30px;
 }
 /*End header*/
@@ -420,10 +414,11 @@ li{
     color: white;
     margin-right: 1vw;
     font-weight: lighter;
+    white-space: nowrap;
 }
 
 .relatorio-extra h2{
-    color: #f2b918;
+    color: black;
     font-size: 3em;
     font-weight: 400;
     margin-right: 1vw;
@@ -470,17 +465,53 @@ li{
     z-index: -1000;
 }
 
-#texto-rodape{
-    top: 5vw;
-    position: relative;
-    width: 100%;
-    text-align: center;
-    font-size: 1.7em;
-    font-weight: 400;
+.fa-instagram{
+    font-family: "Font Awesome 5 Brands";
+    position: absolute;
+    color: #f2b918;
+    font-size: 5rem;
+    left: 0%;
+    top: 70%;
+}
+
+.fa-instagram:hover{
+    background: linear-gradient(to bottom left, #fc0fc0, #ffff00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fa-facebook{
+    font-family: "Font Awesome 5 Brands";
+    position: absolute;
+    color: #f2b918;
+    font-size: 5rem;
+    left: 10%;
+    top: 70%;
+}
+
+.fa-facebook:hover{
+    background: #3b5998;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fa-linkedin{
+    font-family: "Font Awesome 5 Brands";
+    position: absolute;
+    color: #f2b918;
+    font-size: 5rem;
+    left: 20%;
+    top: 70%;
+}
+
+.fa-linkedin:hover{
+    background: #0e76a8;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #botao-relatorios{
-    top: 8vw;
+    top: 2vw;
     width: 25%;
     left: 37.5%;
     text-align: center;
@@ -492,6 +523,7 @@ li{
     background-color: #f2b918;
 }
 /*End rodape*/
+
 #modal-entry{
     align-items: start;
 }
@@ -564,9 +596,8 @@ li{
     font-family: 'HUM521B';
     font-size: 1.9em;
     font-weight: 700;
-    bottom: 20px;
-    right: 25px;
-    width: 3vw;
+    top: 96.5%;
+    width: 6vw;
     height: 3vw;
     border-radius: 5px;
     border: 2px solid white;
@@ -580,10 +611,12 @@ li{
 }
 
 #fechar-linha {
+    background-color: white;
+    position: fixed;
     border: 2px solid #f2b918;
     color: #f2b918;
-    right: 70px;
-    bottom: 50px;
+    right: 20px;
+    bottom: 20px;
 }
 
 #message{
@@ -604,12 +637,35 @@ li{
 
 #fechar-home{
     bottom: 16%;
-    right: 2%;
+    right: 11%;
 }
-/*Start*/
+
+#fechar-linha{
+    top: 92%;
+    right: 1%;
+}
+
+#banner-home{
+    margin-left: 10%;
+    width: 80%;
+}
+
 @media screen and (min-width: 1920px) {
-    p{
-        font-size: 2em;
+    html{
+        font-size: 10px;
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+
+    #fechar-home{
+        top: 96%;
+        right: 10.5%;
+    }
+}
+
+@media screen and (max-width: 1919px) {
+    html{
+        font-size: 8px;
         font-weight: 500;
         letter-spacing: 1px;
     }
@@ -617,7 +673,7 @@ li{
 
 @media screen and (max-width:1366px) {
     html{
-        font-size: 7px;
+        font-size: 6px;
         font-family: 'HUM521B', 'Roboto', sans-serif;
         color: white;
         overflow-x: hidden;
@@ -628,20 +684,14 @@ li{
     }
 
     .titulo{
-        font-size: 1.6em;
-    }
-
-    #tema{
         font-size: 2em;
-        margin-top: 10%;
     }
 
     #lista{
-        font-size: 1.8em;
+        font-size: 2.4em;
     }
 
     #botao-mensagem {
-        top: 90%;
         font-size: 2em;
     }
 
@@ -657,6 +707,7 @@ li{
     }
     
     #fechar-linha {
+        position: fixed;
         border: 2px solid #f2b918;
         color: #f2b918;
         right: 59px;
@@ -664,7 +715,7 @@ li{
     }
 
     .next p, .prev p {
-        font-size: 3em;
+        font-size: 2em;
     }
 
     .menu-toggler p{
@@ -694,10 +745,14 @@ li{
     .titulo{
         font-size: 2em;
     }
+    
+    #rel4 { 
+        width: 50%;
+        transform: translate(0, 0);
+    }
 
-    #tema{
-        font-size: 2.6em;
-        margin-top: 10%;
+    #rel3 { 
+        transform: translate(0, 0);
     }
 
     #lista{
@@ -705,7 +760,7 @@ li{
     }
 
     #botao-mensagem {
-        top: 90%;
+        top: 82%;
         font-size: 3em;
     }
 
@@ -772,7 +827,7 @@ li{
 
     .banner{
         display: block;
-        top: 50px;
+        top: 20px;
     }
     
     .titulo{
@@ -790,15 +845,6 @@ li{
         text-align: left;
         line-height: 20px;
     }
-
-    #texto-rodape{
-        top: 2vw;
-        position: relative;
-        width: 100%;
-        text-align: center;
-        font-size: 1.2em;
-        font-weight: 400;
-    }
     
     #botao-relatorios{
         top: 2vw;
@@ -811,14 +857,24 @@ li{
 }
 
 @media screen and (max-width: 600px) {
+    html{
+        font-size: 4px;
+        overflow-x: hidden;
+    }
+
     header{
         width: 100%;
         height: auto;
     }
 
+    .button{
+        border-width: 1px;
+    }
+
     #tau{
         position: absolute;
-        top: 18%;
+        top: 15%;
+        left: -10%;
         width: 10%;
     }
 
@@ -856,71 +912,43 @@ li{
     }
 
     .menu-toggler p {
-        font-size: 1.1em;
-        margin: 0;
+        font-size: 1.8em;
         position: absolute;
-        top: 1vh;
+        top: 2vh;
         left: 50%;
         margin-right: -50%;
         transform: translate(-50%, -50%);
         color: white;
     }
 
-    .section-heading h1{
-        font-size: 2rem;
-    }
-
     .banner{
         display: block;
-        top: 20px;
+        top: 50px;
     }
     
     .conteudo-relatorio{
-        font-size: 0.6em;
+        font-size: .8em;
         transition: all 0s;
         z-index: 10000;
     }
 
-    #tema{
-        font-size: 1.6em;
-        margin-top: 10%;
-    }
-
     #lista{
-        font-size: 1.5em;
+        font-size: 2em;
         width: 80%;
-        margin-top: 20%;
+        margin-top: 10%;
         margin-left: 10%;
         text-align: left;
         line-height: 20px;
     }
 
-    #texto-rodape{
-        top: 2vw;
-        position: relative;
-        width: 100%;
-        text-align: center;
-        font-size: 1.2em;
-        font-weight: 400;
-    }
-    
-    #botao-relatorios{
-        top: 2vw;
-        width: 25%;
-        left: 37.5%;
-        text-align: center;
-        color: white;
-        border-color: white;
-    }
-
     #botao-mensagem {
         pointer-events: painted;
         position: absolute;
-        top: 90%;
-        left: 89%;
-        width: 10%;
-        height: 18px;
-        font-size: 1em;
+        top: 64.5%;
+        left: 79.5%;
+        width: 4.5em;
+        height: 2.8em;
+        font-size: 1.4em;
         border: 1px solid white;
     }
 
@@ -928,6 +956,11 @@ li{
         font-size: 2.5em;
         width: 20%;
         left: 35%;
+    }
+
+    .section-heading{
+        margin-bottom: 0;
+        white-space: nowrap;
     }
 
     .section-heading h1{
@@ -942,19 +975,18 @@ li{
     }
 
     .next p, .prev p {
-        font-size: 1.5em;
+        font-size: 2.5em;
     }
 
     #botao-slide {
-        bottom: -2%;
+        top: 68%;
         width: 11%;
-        height: auto;
-        border: 1px solid #f2b918;
-        font-size: .8em;
+        height: 2em;
+        border: .1px solid #f2b918;
+        font-size: 1.2em;
     }
 
     /*End Sliders*/
-    
 
     /*complementos*/
     #botao-complemento {
@@ -974,27 +1006,27 @@ li{
     }
 
     #rel-extra-1{
-        margin-top: 15.5%;
+        margin-top: 16%;
     }
     
     #rel-extra-2{
         margin-top: 30%;
+        margin-left: 10%;
     }
     /*End Complementos*/
 
     /*Start rodape*/
     #botao-relatorios{
-        top: 0;
         font-size: 1em;
         border: 1px solid white;
-        height: 20px;
+        height: 15px;
+        top: -10px;
     }
 
     #botao-relatorios:hover {
         background-color: #f2b918;
     }
     /*End rodape*/
-
 
     /*PopUps*/
     .fechar {
@@ -1008,16 +1040,29 @@ li{
     }
     
     #fechar-linha {
+        position: fixed;
+        font-size: 3em;
         border: 2px solid #f2b918;
         color: #f2b918;
-        right: 60px;
-        bottom: 50px;
-        width: 10vw;
+        right: 20px;
+        bottom: 20px;
+        width: 20vw;
         height: 10vw;
+        background-color: white;
+    }
+
+    #modal-home{
+        width: 99%;
+    }
+
+    #banner-home{
+        width: 100%;
+        margin-top: 20%;
     }
 
     .modal-container {
         height: 100%;
+        z-index: 99999;
     }
 
     .modal-container1 {
@@ -1026,10 +1071,9 @@ li{
     }
 
     #fechar-home{
-        bottom: 15%;
+        bottom: 1%;
         right: 1%;
+        width: 8%;
     }
-    
-
     /*End PopUps*/
 }
