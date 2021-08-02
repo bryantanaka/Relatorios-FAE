@@ -1,7 +1,6 @@
 @font-face {
     font-family: "HUM521B";
-    src: url("/fonts/Humanst521\ BT.ttf");
-         
+    src: url("/fonts/Humanst521\ BT.ttf");   
 }
 
 /*Start global*/
@@ -997,6 +996,24 @@ li{
         top: -15px;
     }
 
+    .fa-instagram{
+        font-size: 2em;
+        left: 0%;
+        top: 50%;
+    }
+    
+    .fa-facebook{
+        font-size: 2em;
+        left: 10%;
+        top: 50%;
+    }
+    
+    .fa-linkedin{
+        font-size: 2em;
+        left: 20%;
+        top: 50%;
+    }
+
     .relatorio-extra h1{
         font-size: 1.6em;
     }
@@ -1010,7 +1027,7 @@ li{
     }
     
     #rel-extra-2{
-        margin-top: 30%;
+        margin-top: 30.5%;
         margin-left: 10%;
     }
     /*End Complementos*/
