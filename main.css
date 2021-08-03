@@ -1,6 +1,13 @@
 @font-face {
-    font-family: "HUM521B";
-    src: url("/fonts/Humanst521\ BT.ttf");   
+    font-family: 'HUM521 BT';
+    src: url('fonts/humanst521_bt-webfont.eot');
+    src: url('fonts/humanst521_bt-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/humanst521_bt-webfont.woff2') format('woff2'),
+         url('fonts/humanst521_bt-webfont.woff') format('woff'),
+         url('fonts/humanst521_bt-webfont.ttf') format('truetype'),
+         url('fonts/humanst521_bt-webfont.svg#humanst521_btroman') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 /*Start global*/
@@ -12,7 +19,7 @@
 
 html{
     font-size: 10px;
-    font-family: 'HUM521B', 'Roboto', sans-serif;
+    font-family: 'HUM521 BT', 'Roboto', sans-serif;
     color: white;
     overflow-x: hidden;
 }
@@ -592,7 +599,7 @@ li{
 
 .fechar {
     position: absolute;
-    font-family: 'HUM521B';
+    font-family: 'HUM521 BT';
     font-size: 1.9em;
     font-weight: 700;
     top: 96.5%;
@@ -673,7 +680,7 @@ li{
 @media screen and (max-width:1366px) {
     html{
         font-size: 6px;
-        font-family: 'HUM521B', 'Roboto', sans-serif;
+        font-family: 'HUM521 BT', 'Roboto', sans-serif;
         color: white;
         overflow-x: hidden;
     }
@@ -725,7 +732,7 @@ li{
 @media screen and (max-width:1024px) {
     html{
         font-size: 5px;
-        font-family: 'HUM521B', 'Roboto', sans-serif;
+        font-family: 'HUM521 BT', 'Roboto', sans-serif;
         color: white;
         overflow-x: hidden;
     }
