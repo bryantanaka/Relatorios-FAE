@@ -410,8 +410,12 @@ li{
     text-align: left;
 }
 
+#titulo-extra{
+    text-transform: uppercase;
+}
+
 .relatorio-extra h1{
-    font-size: 4em;
+    font-size: 3.9em;
     color: white;
     font-weight: lighter;
     white-space: nowrap;
